@@ -4,3 +4,6 @@
 [submodule "hardware/gsg-kicad-lib"]
 	path = hardware/gsg-kicad-lib
 	url = https://github.com/greatscottgadgets/gsg-kicad-lib.git
+[submodule "host/py-hackrf-PARTI"]
+	path = host/py-hackrf-PARTI
+	url = https://github.com/JSahliCU/py-hackrf-PARTI
