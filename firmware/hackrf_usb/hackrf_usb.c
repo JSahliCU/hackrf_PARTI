@@ -58,6 +58,7 @@
 #include "platform_detect.h"
 #include "clkin.h"
 #include "usb_api_gpio.h"
+#include "usb_api_i2c.h"
 
 extern uint32_t __m0_start__;
 extern uint32_t __m0_end__;
@@ -127,6 +128,8 @@ static usb_request_handler_fn vendor_request_handler[] = {
 	usb_vendor_request_read_supported_platform,
 	usb_vendor_request_set_leds,
 	usb_vendor_request_set_gpio,
+	usb_vendor_request_set_i2c_split,
+	usb_vendor_request_set_i2c_solid
 };
 
 static const uint32_t vendor_request_handler_count =
